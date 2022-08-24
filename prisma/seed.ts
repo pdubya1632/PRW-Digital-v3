@@ -40,6 +40,41 @@ async function seed() {
     },
   });
 
+    const projects = [
+    {
+      slug: "my-first-project",
+      title: "My First project!",
+      markdown: `
+# This is my first project!
+Isn't it great?
+      `.trim(),
+    },
+    {
+      slug: "my-second-project",
+      title: "My Second project!",
+      markdown: `
+# This is my second project!
+Isn't it great?
+      `.trim(),
+    },
+        {
+      slug: "my-third-project",
+      title: "My Third project!",
+      markdown: `
+# This is my third project!
+Isn't it great?
+      `.trim(),
+    },
+  ];
+
+  for (const project of projects) {
+    await prisma.project.upsert({
+      where: { slug: project.slug },
+      update: project,
+      create: project,
+    });
+  }
+
   console.log(`Database has been seeded. 🌱`);
 }
 

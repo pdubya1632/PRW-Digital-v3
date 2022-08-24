@@ -1,13 +1,16 @@
 /** @type {import('@types/eslint').Linter.BaseConfig} */
 module.exports = {
+  root: true,
   extends: [
     "@remix-run/eslint-config",
     "@remix-run/eslint-config/node",
     "@remix-run/eslint-config/jest-testing-library",
     //    "prettier",
     "plugin:react/recommended", // Uses the recommended rules from @eslint-plugin-react
-    "prettier/@typescript-eslint", // Uses eslint-config-prettier to disable ESLint rules from @typescript-eslint/eslint-plugin that would conflict with prettier
-    "plugin:prettier/recommended", // Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
   ],
   env: {
     "cypress/globals": true,
@@ -35,5 +38,7 @@ module.exports = {
   rules: {
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
     // e.g. "@typescript-eslint/explicit-function-return-type": "off",
+    "no-console": 1, // Means warning
+    "prettier/prettier": 2, // Means error
   },
 };

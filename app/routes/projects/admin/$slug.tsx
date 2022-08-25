@@ -42,6 +42,7 @@ export const action: ActionFunction = async ({ request, params }) => {
   await requireAdminUser(request);
   invariant(params.slug, "slug is required");
   const formData = await request.formData();
+  
 
   const title = formData.get("title");
   const slug = formData.get("slug");
@@ -79,6 +80,8 @@ export default function NewProjectRoute() {
   const transition = useTransition();
   const isCreating = transition.submission?.formData.get("intent") === "create";
   const isUpdating = transition.submission?.formData.get("intent") === "update";
+
+  const isDeleting = transition.submission?.formData.get("intent") === "delete";
   const isNewProject = !data.project;
 
   return (
@@ -127,6 +130,17 @@ export default function NewProjectRoute() {
         />
       </p>
       <div className="flex justify-end gap-4">
+                {isNewProject ? null : (
+          <button
+            type="submit"
+            name="intent"
+            value="delete"
+            className="rounded bg-red-500 py-2 px-4 text-white hover:bg-red-600 focus:bg-red-400 disabled:bg-red-300"
+            disabled={isDeleting}
+          >
+            {isDeleting ? "Deleting..." : "Delete"}
+          </button>
+        )}
         <button
           type="submit"
           name="intent"

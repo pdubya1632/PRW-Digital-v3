@@ -1,4 +1,9 @@
-import type { LinksFunction, LoaderArgs, LoaderFunction, MetaFunction } from "@remix-run/node";
+import type {
+  LinksFunction,
+  LoaderArgs,
+  LoaderFunction,
+  MetaFunction,
+} from "@remix-run/node";
 import { json } from "@remix-run/node";
 import {
   Links,
@@ -26,7 +31,7 @@ export const meta: MetaFunction = () => ({
 
 type LoaderData = {
   user: Awaited<ReturnType<typeof getUser>>;
-  ENV: any;
+  ENV: ReturnType<typeof getEnv>;
 };
 
 export const loader: LoaderFunction = async ({ request }) => {
@@ -58,4 +63,3 @@ export default function App() {
     </html>
   );
 }
-

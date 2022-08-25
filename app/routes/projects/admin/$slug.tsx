@@ -11,6 +11,7 @@ import {
   createProject,
   getProject,
   updateProject,
+  deleteProject,
 } from "~/models/project.server";
 import invariant from "tiny-invariant";
 import { requireAdminUser } from "~/session.server";
@@ -42,7 +43,12 @@ export const action: ActionFunction = async ({ request, params }) => {
   await requireAdminUser(request);
   invariant(params.slug, "slug is required");
   const formData = await request.formData();
-  
+  const intent = formData.get("intent");
+
+  if (intent === "delete") {
+    await deleteProject(params.slug);
+    return redirect("/project/admin");
+  }
 
   const title = formData.get("title");
   const slug = formData.get("slug");

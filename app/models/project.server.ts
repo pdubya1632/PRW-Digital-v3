@@ -32,3 +32,7 @@ export async function updateProject(
 ) {
   return prisma.project.update({ data: project, where: { slug } });
 }
+
+export async function deleteProject(slug: string) {
+  return prisma.project.delete({ where: { slug } });
+}

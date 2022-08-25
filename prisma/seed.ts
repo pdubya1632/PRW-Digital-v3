@@ -40,7 +40,7 @@ async function seed() {
     },
   });
 
-    const projects = [
+  const projects = [
     {
       slug: "my-first-project",
       title: "My First project!",
@@ -57,7 +57,7 @@ Isn't it great?
 Isn't it great?
       `.trim(),
     },
-        {
+    {
       slug: "my-third-project",
       title: "My Third project!",
       markdown: `

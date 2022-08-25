@@ -1,21 +1,25 @@
-import type { LoaderFunction } from "@remix-run/node";
 import { Link, Outlet, useLoaderData } from "@remix-run/react";
+import type { LoaderFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { getProjectListings } from "~/models/project.server";
+import { requireAdminUser } from "~/session.server";
 
 type LoaderData = {
   projects: Awaited<ReturnType<typeof getProjectListings>>;
 };
 
-export const loader: LoaderFunction = async () => {
-  return json({ projects: await getProjectListings() });
+export const loader: LoaderFunction = async ({ request }) => {
+  await requireAdminUser(request);
+  return json<LoaderData>({ projects: await getProjectListings() });
 };
 
 export default function AdminRoute() {
   const { projects } = useLoaderData() as LoaderData;
   return (
     <div className="mx-auto max-w-4xl">
-      <h1 className="my-6 mb-2 border-b-2 text-center text-3xl">Blog Admin</h1>
+      <h1 className="my-6 mb-2 border-b-2 text-center text-3xl">
+        Project Admin
+      </h1>
       <div className="grid grid-cols-4 gap-6">
         <nav className="col-span-4 md:col-span-1">
           <ul>

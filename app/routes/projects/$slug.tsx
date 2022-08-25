@@ -13,12 +13,12 @@ type LoaderData = {
 export const loader: LoaderFunction = async ({ params }) => {
   const { slug } = params;
   invariant(slug, "slug is required");
-
   const project = await getProject(slug);
-  invariant(project, `project not found: ${slug}`);
 
+  if (!project) {
+    throw new Response("Not Found", { status: 404 });
+  }
   const html = marked(project.markdown);
-
   return json<LoaderData>({ title: project.title, html });
 };
 

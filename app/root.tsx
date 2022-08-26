@@ -19,6 +19,15 @@ import tailwindStylesheetUrl from "./styles/tailwind.css";
 import { getUser } from "./session.server";
 import { getEnv } from "./env.server";
 
+import { AppFooter } from "~/components/AppFooter";
+import { AppHeader } from "~/components/AppHeader";
+// import { AppHeaderMobile } from "~/components/AppHeaderMobile";
+import {
+  SITE_DESCRIPTION,
+  SITE_TITLE,
+  SITE_URL
+} from "~/config/constants";
+
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: tailwindStylesheetUrl }];
 };
@@ -42,7 +51,9 @@ export const loader: LoaderFunction = async ({ request }) => {
 };
 
 export default function App() {
-  const data = useLoaderData();
+  // Hooks
+  const data = useLoaderData<typeof loader>();
+
   return (
     <html lang="en" className="h-full">
       <head>
@@ -50,7 +61,19 @@ export default function App() {
         <Links />
       </head>
       <body className="h-full">
+        {/* Header */}
+         <AppHeader />
+
+        {/* Main */}
         <Outlet />
+        
+        {/* Footer */}
+           <AppFooter />    
+
+
+        
+
+        {/* Remix */}
         <ScrollRestoration />
         <Scripts />
         <script

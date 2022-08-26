@@ -1,18 +1,29 @@
+import { Link } from "@remix-run/react";
+import { useOptionalUser } from "~/utils";
+
 export const AppHeader = () => {
+  const user = useOptionalUser();
   return (
     <div className="navbar mt-6">
       <div className="flex-1">
-        <a className="pl-5 font-medium normal-case leading-5" href="/">
+        <Link
+                    to="/" className="pl-5 font-medium normal-case leading-5">
           Patrick<span className="pl-1">Richardson</span> Wright
-        </a>
+        </Link>
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal p-5">
           <li>
-            <a href="/work">Work</a>
+        <Link
+                    to="/">
+          Work
+        </Link>
           </li>
           <li>
-            <a href="/about">About</a>
+        <Link
+                    to="/about">
+          About
+        </Link>
           </li>
         </ul>
       </div>

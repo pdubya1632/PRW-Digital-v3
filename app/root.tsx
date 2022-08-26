@@ -22,11 +22,7 @@ import { getEnv } from "./env.server";
 import { AppFooter } from "~/components/AppFooter";
 import { AppHeader } from "~/components/AppHeader";
 // import { AppHeaderMobile } from "~/components/AppHeaderMobile";
-import {
-  SITE_DESCRIPTION,
-  SITE_TITLE,
-  SITE_URL
-} from "~/config/constants";
+import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from "~/config/constants";
 
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: tailwindStylesheetUrl }];
@@ -62,16 +58,13 @@ export default function App() {
       </head>
       <body className="h-full">
         {/* Header */}
-         <AppHeader />
+        <AppHeader />
 
         {/* Main */}
         <Outlet />
-        
+
         {/* Footer */}
-           <AppFooter />    
-
-
-        
+        <AppFooter />
 
         {/* Remix */}
         <ScrollRestoration />

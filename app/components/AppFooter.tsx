@@ -1,12 +1,10 @@
+import { GithubIcon, TwitterIcon, LinkedInIcon } from "./Icons";
 import {
   SOCIAL_GITHUB,
   SOCIAL_LINKEDIN,
   SOCIAL_TWITTER,
   SITE_YEAR,
-} from "../routes/config/constants";
-import { GithubIcon } from "./GithubIcon";
-import { TwitterIcon } from "./TwitterIcon";
-import { LinkedInIcon } from "./LinkedInIcon";
+} from "../config/constants";
 
 export const AppFooter = () => {
   return (
@@ -15,9 +13,9 @@ export const AppFooter = () => {
         <p>copyright &copy; {SITE_YEAR} - hello@prw.digital</p>
       </div>
       <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-        <a href={SOCIAL_GITHUB}>{GithubIcon}</a>
-        <a href={SOCIAL_LINKEDIN}>{LinkedInIcon}</a>
-        <a href={SOCIAL_TWITTER}>{TwitterIcon}</a>
+        <a href={SOCIAL_GITHUB}>{GithubIcon()}</a>
+        <a href={SOCIAL_LINKEDIN}>{LinkedInIcon()}</a>
+        <a href={SOCIAL_TWITTER}>{TwitterIcon()}</a>
       </div>
     </footer>
   );

@@ -19,8 +19,8 @@ import tailwindStylesheetUrl from "./styles/tailwind.css";
 import { getUser } from "./session.server";
 import { getEnv } from "./env.server";
 
-import { AppFooter } from "~/components/AppFooter";
 import { AppHeader } from "~/components/AppHeader";
+import { AppFooter } from "~/components/AppFooter";
 // import { AppHeaderMobile } from "~/components/AppHeaderMobile";
 import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from "~/config/constants";
 

@@ -1,6 +1,7 @@
+import { Link, useLoaderData } from "@remix-run/react";
 import type { LoaderFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
-import { Link, useLoaderData } from "@remix-run/react"; 
+
 import { getProjectListings } from "~/models/project.server";
 
 type LoaderData = {
@@ -15,53 +16,30 @@ export const loader: LoaderFunction = async () => {
 export default function Index() {
   const { projects } = useLoaderData() as LoaderData;
   return (
-    <main className="relative min-h-screen bg-white sm:flex sm:items-center sm:justify-center">
-      <div className="relative sm:pb-16 sm:pt-8">
-        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
-            <div className="absolute inset-0">
-              <img
-                className="h-full w-full object-cover"
-                src="https://user-images.githubusercontent.com/1500684/157774694-99820c51-8165-4908-a031-34fc371ac0d6.jpg"
-                alt="Sonic Youth On Stage"
-              />
-              <div className="absolute inset-0 bg-[color:rgba(254,204,27,0.5)] mix-blend-multiply" />
-            </div>
-            <div className="relative px-4 pt-16 pb-8 sm:px-6 sm:pt-24 sm:pb-14 lg:px-8 lg:pb-20 lg:pt-32">
-              <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
-
+    <main className="min-h-screen">
+      <div>
+        <h2 className="p-7 my-7 text-4xl">I'm a Creative Developer with a love for great design, quality code, and intuitive user experiences.</h2>
+        <div className="grid grid-cols-3">
+          {projects.map((project) => (
+            <div className="card flex-wrap" key={project.slug}>
+              <figure></figure>
+              <div className="card-body p-7">
+                <h2 className="card-title">
+                  <Link
+                    to={project.slug}
+                    prefetch="intent"
+                  >
+                    {project.title} &#8594;
+                  </Link>
+                </h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div className="card-actions justify-end">
+                  <div className="badge badge-outline">Development</div>
+                  <div className="badge badge-outline">Design</div>
+                </div>
               </div>
-              <a href="https://remix.run">
-                <img
-                  src="https://user-images.githubusercontent.com/1500684/158298926-e45dafff-3544-4b69-96d6-d3bcc33fc76a.svg"
-                  alt="Remix"
-                  className="mx-auto mt-16 w-full max-w-[12rem] md:max-w-[16rem]"
-                />
-              </a>
             </div>
-          </div>
-        </div>
-
-        <div className="mx-auto mt-16 max-w-7xl text-center">
-      <ul>
-        {projects.map((project) => (
-          <li key={project.slug}>
-            <Link
-              to={project.slug}
-              prefetch="intent"
-              className="text-blue-600 underline"
-            >
-              {project.title}
-            </Link>
-          </li>
-        ))}
-      </ul>
-        </div>
-
-        <div className="mx-auto max-w-7xl py-2 px-4 sm:px-6 lg:px-8">
-          <div className="mt-6 flex flex-wrap justify-center gap-8">
-
-          </div>
+          ))}
         </div>
       </div>
     </main>

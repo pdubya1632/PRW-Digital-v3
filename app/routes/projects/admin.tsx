@@ -39,3 +39,12 @@ export default function AdminRoute() {
     </div>
   );
 }
+
+export function ErrorBoundary({ error }: { error: Error }) {
+  return (
+    <div className="text-red-500">
+      Oops! Something went wrong.
+      <pre>{error.message}</pre>
+    </div>
+  );
+}

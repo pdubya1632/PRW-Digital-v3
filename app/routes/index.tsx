@@ -18,21 +18,20 @@ export default function Index() {
   return (
     <main className="min-h-screen">
       <div>
-        <h2 className="p-7 my-7 text-4xl">I'm a Creative Developer with a love for great design, quality code, and intuitive user experiences.</h2>
+        <h2 className="my-7 p-7 text-4xl">
+          I'm a Creative Developer with a love for great design, quality code,
+          and intuitive user experiences.
+        </h2>
         <div className="grid grid-cols-3">
           {projects.map((project) => (
             <div className="card flex-wrap" key={project.slug}>
               <figure></figure>
               <div className="card-body p-7">
                 <h2 className="card-title">
-                  <Link
-                    to={project.slug}
-                    prefetch="intent"
-                  >
+                  <Link to={project.slug} prefetch="intent">
                     {project.title} &#8594;
                   </Link>
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div className="card-actions justify-end">
                   <div className="badge badge-outline">Development</div>
                   <div className="badge badge-outline">Design</div>

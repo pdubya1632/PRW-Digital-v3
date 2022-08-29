@@ -1,11 +1,14 @@
 import {
   Form,
   useActionData,
+  useCatch,
   useLoaderData,
+  useParams,
   useTransition,
 } from "@remix-run/react";
 import { redirect, json } from "@remix-run/node";
 import type { ActionFunction, LoaderFunction } from "@remix-run/node";
+
 import type { Project } from "~/models/project.server";
 import {
   createProject,
@@ -80,13 +83,12 @@ export const action: ActionFunction = async ({ request, params }) => {
 const inputClassName = `w-full rounded border border-gray-500 px-2 py-2`;
 
 export default function NewProjectRoute() {
-  const data = useLoaderData();
+  const data = useLoaderData() as LoaderData;
   const errors = useActionData() as ActionData;
 
   const transition = useTransition();
   const isCreating = transition.submission?.formData.get("intent") === "create";
   const isUpdating = transition.submission?.formData.get("intent") === "update";
-
   const isDeleting = transition.submission?.formData.get("intent") === "delete";
   const isNewProject = !data.project;
 
@@ -164,4 +166,17 @@ export default function NewProjectRoute() {
       </div>
     </Form>
   );
+}
+
+export function CatchBoundary() {
+  const caught = useCatch();
+  const params = useParams();
+  if (caught.status === 404) {
+    return (
+      <div className="text-red-500">
+        Oops! The project with the slug "{params.slug}" does not exist.
+      </div>
+    );
+  }
+  throw new Error(`Unsupported thrown response status code: ${caught.status}`);
 }

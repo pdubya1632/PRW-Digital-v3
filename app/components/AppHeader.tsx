@@ -5,7 +5,11 @@ export const AppHeader = () => {
     <div className="navigation navbar mt-6">
       <div className="flex-1">
         <Link to="/" className="pl-5 text-2xl normal-case leading-6">
-          Patrick<br /><span className="pl-2">Richardson</span><br />Wright
+          Patrick
+          <br />
+          <span className="pl-2">Richardson</span>
+          <br />
+          Wright
         </Link>
       </div>
       <div className="flex-none">

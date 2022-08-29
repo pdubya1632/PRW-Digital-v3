@@ -9,7 +9,7 @@ import {
 
 export const AppFooter = () => {
   return (
-    <footer className="footer items-center p-7 border-t-4">
+    <footer className="footer items-center border-t-4 p-7">
       <div className="grid-flow-col items-center">
         <p>Copyright &copy; {SITE_YEAR} - hello@prw.digital</p>
       </div>

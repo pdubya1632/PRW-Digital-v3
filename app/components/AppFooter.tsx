@@ -1,5 +1,5 @@
 import { Link } from "@remix-run/react";
-import { GithubIcon, TwitterIcon, LinkedInIcon } from "./Icons";
+import { GithubIcon, TwitterIcon, LinkedInIcon } from "./icons";
 import {
   SOCIAL_GITHUB,
   SOCIAL_LINKEDIN,

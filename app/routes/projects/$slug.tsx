@@ -1,7 +1,7 @@
 import { marked } from "marked";
 import type { LoaderFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
-import { useLoaderData } from "@remix-run/react";
+import { useCatch, useLoaderData, useParams } from "@remix-run/react";
 import { getProject } from "~/models/project.server";
 import invariant from "tiny-invariant";
 
@@ -30,4 +30,17 @@ export default function ProjectRoute() {
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </main>
   );
+}
+
+export function CatchBoundary() {
+  const caught = useCatch();
+  const params = useParams();
+  if (caught.status === 404) {
+    return (
+      <div className="text-red-500">
+        Uh oh! The post with the slug "{params.slug}" does not exist!
+      </div>
+    );
+  }
+  throw new Error(`Unsupported thrown response status code: ${caught.status}`);
 }

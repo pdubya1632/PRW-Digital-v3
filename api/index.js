@@ -1,7 +1,11 @@
+var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
-var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __getProtoOf = Object.getPrototypeOf, __hasOwnProp = Object.prototype.hasOwnProperty;
+var __commonJS = (cb, mod) => function() {
+  return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
+};
 var __export = (target, all) => {
   for (var name in all)
     __defProp(target, name, { get: all[name], enumerable: !0 });
@@ -11,7 +15,17 @@ var __export = (target, all) => {
       !__hasOwnProp.call(to, key) && key !== except && __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
   return to;
 };
-var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: !0 }), mod);
+var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: !0 }) : target,
+  mod
+)), __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: !0 }), mod);
+
+// app/routes/about.tsx
+var require_about = __commonJS({
+  "app/routes/about.tsx"() {
+    "use strict";
+  }
+});
 
 // <stdin>
 var stdin_exports = {};
@@ -217,7 +231,8 @@ function TwitterIcon() {
 
 // app/config/constants.ts
 var SITE_AUTHOR = "Patrick Richardson Wright", SITE_DESCRIPTION = `The online portfolio of ${SITE_AUTHOR}, a Creative Developer`, SITE_EMAIL_ADDRESS = "hello@prw.digital", SITE_EMAIL_LINK = `mailto:${SITE_EMAIL_ADDRESS}`, SITE_TITLE = `${SITE_AUTHOR} - A Creative Developer`, SITE_UPDATED = new Date("2022-07-20");
-var SITE_YEAR = new Date().getFullYear(), SOCIAL_GITHUB = "https://github.com/pdubya1632/", SOCIAL_LINKEDIN = "https://www.linkedin.com/in/patrick-wright-451535166/", SOCIAL_TWITTER = "https://twitter.com/wrightmight";
+var SITE_YEAR = new Date().getFullYear(), INTRO_BLURB = `I'm a Creative Developer with a love for great design, quality code,
+          and intuitive user experiences.`, SOCIAL_GITHUB = "https://github.com/pdubya1632/", SOCIAL_LINKEDIN = "https://www.linkedin.com/in/patrick-wright-451535166/", SOCIAL_TWITTER = "https://twitter.com/wrightmight";
 
 // app/components/AppFooter.tsx
 var import_jsx_dev_runtime = require("react/jsx-dev-runtime"), AppFooter = () => /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("footer", {
@@ -355,6 +370,9 @@ function App() {
   }, this);
 }
 
+// server-entry-module:@remix-run/dev/server-build
+var route1 = __toESM(require_about());
+
 // app/routes/index.tsx
 var routes_exports = {};
 __export(routes_exports, {
@@ -390,10 +408,10 @@ function Index() {
       children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h2", {
           className: "my-7 p-7 text-4xl",
-          children: "I'm a Creative Developer with a love for great design, quality code, and intuitive user experiences."
+          children: INTRO_BLURB
         }, void 0, !1, {
           fileName: "app/routes/index.tsx",
-          lineNumber: 21,
+          lineNumber: 25,
           columnNumber: 9
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -403,7 +421,7 @@ function Index() {
             children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("figure", {}, void 0, !1, {
                 fileName: "app/routes/index.tsx",
-                lineNumber: 28,
+                lineNumber: 31,
                 columnNumber: 15
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -420,12 +438,12 @@ function Index() {
                       ]
                     }, void 0, !0, {
                       fileName: "app/routes/index.tsx",
-                      lineNumber: 31,
+                      lineNumber: 34,
                       columnNumber: 19
                     }, this)
                   }, void 0, !1, {
                     fileName: "app/routes/index.tsx",
-                    lineNumber: 30,
+                    lineNumber: 33,
                     columnNumber: 17
                   }, this),
                   /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -436,7 +454,7 @@ function Index() {
                         children: "Development"
                       }, void 0, !1, {
                         fileName: "app/routes/index.tsx",
-                        lineNumber: 36,
+                        lineNumber: 39,
                         columnNumber: 19
                       }, this),
                       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -444,47 +462,47 @@ function Index() {
                         children: "Design"
                       }, void 0, !1, {
                         fileName: "app/routes/index.tsx",
-                        lineNumber: 37,
+                        lineNumber: 40,
                         columnNumber: 19
                       }, this)
                     ]
                   }, void 0, !0, {
                     fileName: "app/routes/index.tsx",
-                    lineNumber: 35,
+                    lineNumber: 38,
                     columnNumber: 17
                   }, this)
                 ]
               }, void 0, !0, {
                 fileName: "app/routes/index.tsx",
-                lineNumber: 29,
+                lineNumber: 32,
                 columnNumber: 15
               }, this)
             ]
           }, project.slug, !0, {
             fileName: "app/routes/index.tsx",
-            lineNumber: 27,
+            lineNumber: 30,
             columnNumber: 13
           }, this))
         }, void 0, !1, {
           fileName: "app/routes/index.tsx",
-          lineNumber: 25,
+          lineNumber: 28,
           columnNumber: 9
         }, this)
       ]
     }, void 0, !0, {
       fileName: "app/routes/index.tsx",
-      lineNumber: 20,
+      lineNumber: 24,
       columnNumber: 7
     }, this)
   }, void 0, !1, {
     fileName: "app/routes/index.tsx",
-    lineNumber: 19,
+    lineNumber: 23,
     columnNumber: 4
   }, this);
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "ebc3038e", entry: { module: "/build/entry.client-SARXFRK7.js", imports: ["/build/_shared/chunk-23GT7FG6.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-3UPL6UAJ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-RQOB6IL2.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-EBC3038E.js" };
+var assets_manifest_default = { version: "5361b821", entry: { module: "/build/entry.client-DIBARDUB.js", imports: ["/build/_shared/chunk-EMAV6OQX.js", "/build/_shared/chunk-5KL4PAQL.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-ZMPXOVAE.js", imports: ["/build/_shared/chunk-WRD4C6IX.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-BIOFYLPQ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-OOINFAE4.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-5361B821.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
@@ -495,6 +513,14 @@ var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { mod
     index: void 0,
     caseSensitive: void 0,
     module: root_exports
+  },
+  "routes/about": {
+    id: "routes/about",
+    parentId: "root",
+    path: "about",
+    index: void 0,
+    caseSensitive: void 0,
+    module: route1
   },
   "routes/index": {
     id: "routes/index",

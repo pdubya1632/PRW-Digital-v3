@@ -1,4 +1,4 @@
-import { Link } from "@remix-run/react";
+import { a } from "@remix-run/react";
 import { GithubIcon, TwitterIcon, LinkedInIcon } from "./icons";
 import {
   SOCIAL_GITHUB,
@@ -14,9 +14,15 @@ export const AppFooter = () => {
         <p>Copyright &copy; {SITE_YEAR} - hello@prw.digital</p>
       </div>
       <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-        <Link to={SOCIAL_GITHUB}>{GithubIcon()}</Link>
-        <Link to={SOCIAL_LINKEDIN}>{LinkedInIcon()}</Link>
-        <Link to={SOCIAL_TWITTER}>{TwitterIcon()}</Link>
+        <a href={SOCIAL_GITHUB} target="_blank" rel="noreferrer">
+          {GithubIcon()}
+        </a>
+        <a href={SOCIAL_LINKEDIN} target="_blank" rel="noreferrer">
+          {LinkedInIcon()}
+        </a>
+        <a href={SOCIAL_TWITTER} target="_blank" rel="noreferrer">
+          {TwitterIcon()}
+        </a>
       </div>
     </footer>
   );

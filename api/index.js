@@ -1,11 +1,7 @@
-var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
-var __getProtoOf = Object.getPrototypeOf, __hasOwnProp = Object.prototype.hasOwnProperty;
-var __commonJS = (cb, mod) => function() {
-  return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
-};
+var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __export = (target, all) => {
   for (var name in all)
     __defProp(target, name, { get: all[name], enumerable: !0 });
@@ -15,17 +11,7 @@ var __export = (target, all) => {
       !__hasOwnProp.call(to, key) && key !== except && __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
   return to;
 };
-var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
-  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: !0 }) : target,
-  mod
-)), __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: !0 }), mod);
-
-// app/routes/about.tsx
-var require_about = __commonJS({
-  "app/routes/about.tsx"() {
-    "use strict";
-  }
-});
+var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: !0 }), mod);
 
 // <stdin>
 var stdin_exports = {};
@@ -68,10 +54,10 @@ __export(root_exports, {
   links: () => links,
   meta: () => meta
 });
-var import_react4 = require("@remix-run/react");
+var import_react3 = require("@remix-run/react");
 
 // app/styles/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-H62UBGOC.css";
+var tailwind_default = "/build/_assets/tailwind-5APQZDP4.css";
 
 // app/components/AppHeader.tsx
 var import_react2 = require("@remix-run/react"), import_jsx_dev_runtime = require("react/jsx-dev-runtime"), AppHeader = () => /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -165,9 +151,6 @@ var import_react2 = require("@remix-run/react"), import_jsx_dev_runtime = requir
   columnNumber: 5
 }, this);
 
-// app/components/AppFooter.tsx
-var import_react3 = require("@remix-run/react");
-
 // app/components/icons.tsx
 var import_jsx_dev_runtime = require("react/jsx-dev-runtime");
 function GithubIcon() {
@@ -259,28 +242,34 @@ var import_jsx_dev_runtime = require("react/jsx-dev-runtime"), AppFooter = () =>
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
       className: "grid-flow-col gap-4 md:place-self-center md:justify-self-end",
       children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react3.Link, {
-          to: SOCIAL_GITHUB,
+        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
+          href: SOCIAL_GITHUB,
+          target: "_blank",
+          rel: "noreferrer",
           children: GithubIcon()
         }, void 0, !1, {
           fileName: "app/components/AppFooter.tsx",
           lineNumber: 17,
           columnNumber: 9
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react3.Link, {
-          to: SOCIAL_LINKEDIN,
+        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
+          href: SOCIAL_LINKEDIN,
+          target: "_blank",
+          rel: "noreferrer",
           children: LinkedInIcon()
         }, void 0, !1, {
           fileName: "app/components/AppFooter.tsx",
-          lineNumber: 18,
+          lineNumber: 20,
           columnNumber: 9
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react3.Link, {
-          to: SOCIAL_TWITTER,
+        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
+          href: SOCIAL_TWITTER,
+          target: "_blank",
+          rel: "noreferrer",
           children: TwitterIcon()
         }, void 0, !1, {
           fileName: "app/components/AppFooter.tsx",
-          lineNumber: 19,
+          lineNumber: 23,
           columnNumber: 9
         }, this)
       ]
@@ -308,70 +297,109 @@ function App() {
     children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("head", {
         children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react4.Meta, {}, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react3.Meta, {}, void 0, !1, {
             fileName: "app/root.tsx",
-            lineNumber: 33,
+            lineNumber: 30,
             columnNumber: 9
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react4.Links, {}, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react3.Links, {}, void 0, !1, {
             fileName: "app/root.tsx",
-            lineNumber: 34,
+            lineNumber: 31,
             columnNumber: 9
           }, this)
         ]
       }, void 0, !0, {
         fileName: "app/root.tsx",
-        lineNumber: 32,
+        lineNumber: 29,
         columnNumber: 7
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("body", {
         children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(AppHeader, {}, void 0, !1, {
             fileName: "app/root.tsx",
-            lineNumber: 37,
+            lineNumber: 34,
             columnNumber: 9
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react4.Outlet, {}, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react3.Outlet, {}, void 0, !1, {
             fileName: "app/root.tsx",
-            lineNumber: 38,
+            lineNumber: 35,
             columnNumber: 9
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(AppFooter, {}, void 0, !1, {
             fileName: "app/root.tsx",
+            lineNumber: 36,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react3.ScrollRestoration, {}, void 0, !1, {
+            fileName: "app/root.tsx",
+            lineNumber: 38,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react3.Scripts, {}, void 0, !1, {
+            fileName: "app/root.tsx",
             lineNumber: 39,
             columnNumber: 9
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react4.ScrollRestoration, {}, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react3.LiveReload, {}, void 0, !1, {
             fileName: "app/root.tsx",
-            lineNumber: 41,
-            columnNumber: 9
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react4.Scripts, {}, void 0, !1, {
-            fileName: "app/root.tsx",
-            lineNumber: 42,
-            columnNumber: 9
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react4.LiveReload, {}, void 0, !1, {
-            fileName: "app/root.tsx",
-            lineNumber: 43,
+            lineNumber: 40,
             columnNumber: 9
           }, this)
         ]
       }, void 0, !0, {
         fileName: "app/root.tsx",
-        lineNumber: 36,
+        lineNumber: 33,
         columnNumber: 7
       }, this)
     ]
   }, void 0, !0, {
     fileName: "app/root.tsx",
-    lineNumber: 31,
+    lineNumber: 28,
     columnNumber: 5
   }, this);
 }
 
-// server-entry-module:@remix-run/dev/server-build
-var route1 = __toESM(require_about());
+// app/routes/about.tsx
+var about_exports = {};
+__export(about_exports, {
+  default: () => about_default
+});
+var import_jsx_dev_runtime = require("react/jsx-dev-runtime");
+function about_default() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("main", {
+    className: "min-h-screen",
+    children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h2", {
+      className: "my-7 p-7 text-4xl",
+      children: [
+        "Hey there \u{1F44B}",
+        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, !1, {
+          fileName: "app/routes/about.tsx",
+          lineNumber: 6,
+          columnNumber: 9
+        }, this),
+        "I\u2019m currently enrolled in a Full Stack Coding Bootcamp through University of Washington and operate a photo booth company called",
+        " ",
+        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
+          href: "http://hellothereyou.com",
+          children: "Hello There You"
+        }, void 0, !1, {
+          fileName: "app/routes/about.tsx",
+          lineNumber: 9,
+          columnNumber: 9
+        }, this),
+        " in Seattle, WA. My past lives include video production, front-end development, UX design, and interning at an ad agency."
+      ]
+    }, void 0, !0, {
+      fileName: "app/routes/about.tsx",
+      lineNumber: 4,
+      columnNumber: 7
+    }, this)
+  }, void 0, !1, {
+    fileName: "app/routes/about.tsx",
+    lineNumber: 3,
+    columnNumber: 5
+  }, this);
+}
 
 // app/routes/index.tsx
 var routes_exports = {};
@@ -379,7 +407,7 @@ __export(routes_exports, {
   default: () => Index,
   loader: () => loader
 });
-var import_react5 = require("@remix-run/react"), import_node = require("@remix-run/node");
+var import_react4 = require("@remix-run/react"), import_node = require("@remix-run/node");
 
 // app/database/db.server.ts
 var import_client = require("@prisma/client"), prisma;
@@ -401,7 +429,7 @@ var import_jsx_dev_runtime = require("react/jsx-dev-runtime"), loader = async ()
   return (0, import_node.json)({ projects });
 };
 function Index() {
-  let { projects } = (0, import_react5.useLoaderData)();
+  let { projects } = (0, import_react4.useLoaderData)();
   return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("main", {
     className: "min-h-screen",
     children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -411,7 +439,7 @@ function Index() {
           children: INTRO_BLURB
         }, void 0, !1, {
           fileName: "app/routes/index.tsx",
-          lineNumber: 25,
+          lineNumber: 23,
           columnNumber: 9
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -421,7 +449,7 @@ function Index() {
             children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("figure", {}, void 0, !1, {
                 fileName: "app/routes/index.tsx",
-                lineNumber: 31,
+                lineNumber: 27,
                 columnNumber: 15
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -429,7 +457,7 @@ function Index() {
                 children: [
                   /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h2", {
                     className: "card-title",
-                    children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react5.Link, {
+                    children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react4.Link, {
                       to: project.slug,
                       prefetch: "intent",
                       children: [
@@ -438,12 +466,12 @@ function Index() {
                       ]
                     }, void 0, !0, {
                       fileName: "app/routes/index.tsx",
-                      lineNumber: 34,
+                      lineNumber: 30,
                       columnNumber: 19
                     }, this)
                   }, void 0, !1, {
                     fileName: "app/routes/index.tsx",
-                    lineNumber: 33,
+                    lineNumber: 29,
                     columnNumber: 17
                   }, this),
                   /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -454,7 +482,7 @@ function Index() {
                         children: "Development"
                       }, void 0, !1, {
                         fileName: "app/routes/index.tsx",
-                        lineNumber: 39,
+                        lineNumber: 35,
                         columnNumber: 19
                       }, this),
                       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -462,47 +490,47 @@ function Index() {
                         children: "Design"
                       }, void 0, !1, {
                         fileName: "app/routes/index.tsx",
-                        lineNumber: 40,
+                        lineNumber: 36,
                         columnNumber: 19
                       }, this)
                     ]
                   }, void 0, !0, {
                     fileName: "app/routes/index.tsx",
-                    lineNumber: 38,
+                    lineNumber: 34,
                     columnNumber: 17
                   }, this)
                 ]
               }, void 0, !0, {
                 fileName: "app/routes/index.tsx",
-                lineNumber: 32,
+                lineNumber: 28,
                 columnNumber: 15
               }, this)
             ]
           }, project.slug, !0, {
             fileName: "app/routes/index.tsx",
-            lineNumber: 30,
+            lineNumber: 26,
             columnNumber: 13
           }, this))
         }, void 0, !1, {
           fileName: "app/routes/index.tsx",
-          lineNumber: 28,
+          lineNumber: 24,
           columnNumber: 9
         }, this)
       ]
     }, void 0, !0, {
       fileName: "app/routes/index.tsx",
-      lineNumber: 24,
+      lineNumber: 22,
       columnNumber: 7
     }, this)
   }, void 0, !1, {
     fileName: "app/routes/index.tsx",
-    lineNumber: 23,
-    columnNumber: 4
+    lineNumber: 21,
+    columnNumber: 5
   }, this);
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "f4cf9fb3", entry: { module: "/build/entry.client-DIBARDUB.js", imports: ["/build/_shared/chunk-EMAV6OQX.js", "/build/_shared/chunk-5KL4PAQL.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-VE2WCZ46.js", imports: ["/build/_shared/chunk-WRD4C6IX.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-BIOFYLPQ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-OOINFAE4.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-F4CF9FB3.js" };
+var assets_manifest_default = { version: "ef4d0e5e", entry: { module: "/build/entry.client-6URL4G7T.js", imports: ["/build/_shared/chunk-5XRGLJCI.js", "/build/_shared/chunk-MLBUYSNZ.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-HMWUTF6Z.js", imports: ["/build/_shared/chunk-WRD4C6IX.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-ZR3WQ7ZN.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-VEYRXJF6.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-EF4D0E5E.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
@@ -520,7 +548,7 @@ var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { mod
     path: "about",
     index: void 0,
     caseSensitive: void 0,
-    module: route1
+    module: about_exports
   },
   "routes/index": {
     id: "routes/index",

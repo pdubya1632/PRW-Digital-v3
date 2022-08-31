@@ -11,7 +11,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-import tailwindStylesheetUrl from "./styles/tailwind.css";
+import tailwindStylesheetUrl from "~/styles/tailwind.css";
 
 import { AppHeader } from "~/components/AppHeader";
 import { AppFooter } from "~/components/AppFooter";

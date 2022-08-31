@@ -32,8 +32,7 @@ export default function Index() {
                   </Link>
                 </h2>
                 <div className="card-actions justify-end">
-                  <div className="badge badge-outline">Development</div>
-                  <div className="badge badge-outline">Design</div>
+                  <div className="badge badge-outline">{project.category}</div>
                 </div>
               </div>
             </div>

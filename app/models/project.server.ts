@@ -8,6 +8,10 @@ export async function getProjectList() {
     select: {
       slug: true,
       title: true,
+      category: true,
+    },
+    orderBy: {
+      category: "desc",
     },
   });
 }
@@ -21,14 +25,14 @@ export async function getProject(slug: string) {
 }
 
 export async function createProject(
-  project: Pick<Project, "slug" | "title" | "markdown">
+  project: Pick<Project, "slug" | "title" | "markdown" | "category">
 ) {
   return prisma.project.create({ data: project });
 }
 
 export async function updateProject(
   slug: string,
-  project: Pick<Project, "slug" | "title" | "markdown">
+  project: Pick<Project, "slug" | "title" | "markdown" | "category">
 ) {
   return prisma.project.update({ data: project, where: { slug } });
 }

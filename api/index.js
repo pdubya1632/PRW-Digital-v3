@@ -245,12 +245,12 @@ var import_jsx_dev_runtime = require("react/jsx-dev-runtime"), AppFooter = () =>
         ]
       }, void 0, !0, {
         fileName: "app/components/AppFooter.tsx",
-        lineNumber: 14,
+        lineNumber: 13,
         columnNumber: 9
       }, this)
     }, void 0, !1, {
       fileName: "app/components/AppFooter.tsx",
-      lineNumber: 13,
+      lineNumber: 12,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -263,7 +263,7 @@ var import_jsx_dev_runtime = require("react/jsx-dev-runtime"), AppFooter = () =>
           children: GithubIcon()
         }, void 0, !1, {
           fileName: "app/components/AppFooter.tsx",
-          lineNumber: 17,
+          lineNumber: 16,
           columnNumber: 9
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
@@ -273,7 +273,7 @@ var import_jsx_dev_runtime = require("react/jsx-dev-runtime"), AppFooter = () =>
           children: LinkedInIcon()
         }, void 0, !1, {
           fileName: "app/components/AppFooter.tsx",
-          lineNumber: 20,
+          lineNumber: 19,
           columnNumber: 9
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
@@ -283,19 +283,19 @@ var import_jsx_dev_runtime = require("react/jsx-dev-runtime"), AppFooter = () =>
           children: TwitterIcon()
         }, void 0, !1, {
           fileName: "app/components/AppFooter.tsx",
-          lineNumber: 23,
+          lineNumber: 22,
           columnNumber: 9
         }, this)
       ]
     }, void 0, !0, {
       fileName: "app/components/AppFooter.tsx",
-      lineNumber: 16,
+      lineNumber: 15,
       columnNumber: 7
     }, this)
   ]
 }, void 0, !0, {
   fileName: "app/components/AppFooter.tsx",
-  lineNumber: 12,
+  lineNumber: 11,
   columnNumber: 5
 }, this);
 
@@ -449,7 +449,8 @@ async function getProjectList() {
     select: {
       slug: !0,
       title: !0,
-      category: !0
+      category: !0,
+      url: !0
     },
     orderBy: {
       category: "desc"
@@ -554,7 +555,7 @@ function Index() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "bedb8369", entry: { module: "/build/entry.client-6URL4G7T.js", imports: ["/build/_shared/chunk-5XRGLJCI.js", "/build/_shared/chunk-MLBUYSNZ.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-6PSLPF6X.js", imports: ["/build/_shared/chunk-WRD4C6IX.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-ZR3WQ7ZN.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-WBVOVFTT.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-ILRR7YXH.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-BEDB8369.js" };
+var assets_manifest_default = { version: "7504691b", entry: { module: "/build/entry.client-6URL4G7T.js", imports: ["/build/_shared/chunk-5XRGLJCI.js", "/build/_shared/chunk-MLBUYSNZ.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-DQIJJV46.js", imports: ["/build/_shared/chunk-WRD4C6IX.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-ZR3WQ7ZN.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-WBVOVFTT.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-ILRR7YXH.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-7504691B.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

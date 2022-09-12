@@ -9,6 +9,7 @@ export async function getProjectList() {
       slug: true,
       title: true,
       category: true,
+      url: true,
     },
     orderBy: {
       category: "desc",

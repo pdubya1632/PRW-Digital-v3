@@ -2,7 +2,7 @@ import { Link } from "@remix-run/react";
 
 export const AppHeader = () => {
   return (
-    <div className="navigation navbar mt-6">
+    <div className="navbar bg-base-100 mt-6">
       <div className="flex-1">
         <Link to="/" className="pl-5 text-2xl normal-case leading-6">
           Patrick
@@ -13,7 +13,7 @@ export const AppHeader = () => {
         </Link>
       </div>
       <div className="flex-none">
-        <ul className="menu menu-horizontal px-0 text-xl">
+        <ul className="menu menu-horizontal p-0 text-xl">
           <li>
             <Link to="/">Work</Link>
           </li>

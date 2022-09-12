@@ -57,11 +57,11 @@ __export(root_exports, {
 var import_react3 = require("@remix-run/react");
 
 // app/styles/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-NUDP26HZ.css";
+var tailwind_default = "/build/_assets/tailwind-3FO2M3ZX.css";
 
 // app/components/AppHeader.tsx
 var import_react2 = require("@remix-run/react"), import_jsx_dev_runtime = require("react/jsx-dev-runtime"), AppHeader = () => /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-  className: "navigation navbar mt-6",
+  className: "navbar bg-base-100 mt-6",
   children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
       className: "flex-1",
@@ -103,7 +103,7 @@ var import_react2 = require("@remix-run/react"), import_jsx_dev_runtime = requir
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
       className: "flex-none",
       children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("ul", {
-        className: "menu menu-horizontal px-0 text-xl",
+        className: "menu menu-horizontal p-0 text-xl",
         children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", {
             children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react2.Link, {
@@ -229,7 +229,8 @@ function TwitterIcon() {
 // app/config/constants.ts
 var SITE_AUTHOR = "Patrick Richardson Wright", SITE_DESCRIPTION = `The online portfolio of ${SITE_AUTHOR}, a Creative Developer`, SITE_EMAIL_ADDRESS = "hello@prw.digital", SITE_EMAIL_LINK = `mailto:${SITE_EMAIL_ADDRESS}`, SITE_TITLE = `${SITE_AUTHOR} - A Creative Developer`, SITE_UPDATED = new Date("2022-07-20");
 var SITE_YEAR = new Date().getFullYear(), INTRO_BLURB = `I'm a Creative Developer with a love for great design, quality code,
-          and intuitive user experiences.`, SOCIAL_GITHUB = "https://github.com/pdubya1632/", SOCIAL_LINKEDIN = "https://www.linkedin.com/in/patrick-wright-451535166/", SOCIAL_TWITTER = "https://twitter.com/wrightmight";
+          and intuitive user experiences.`;
+var SOCIAL_GITHUB = "https://github.com/pdubya1632/", SOCIAL_LINKEDIN = "https://www.linkedin.com/in/patrick-wright-451535166/", SOCIAL_TWITTER = "https://twitter.com/wrightmight";
 
 // app/components/AppFooter.tsx
 var import_jsx_dev_runtime = require("react/jsx-dev-runtime"), AppFooter = () => /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("footer", {
@@ -374,6 +375,62 @@ function App() {
   }, this);
 }
 
+// app/routes/contact-form.tsx
+var contact_form_exports = {};
+__export(contact_form_exports, {
+  action: () => action,
+  default: () => contact_form_default
+});
+var import_remix_domains = require("remix-domains"), import_remix_forms = require("remix-forms"), import_zod = require("zod"), import_jsx_dev_runtime = require("react/jsx-dev-runtime"), schema = import_zod.z.object({
+  name: import_zod.z.string().min(1),
+  email: import_zod.z.string().min(1).email(),
+  message: import_zod.z.string().min(1)
+}), mutation = (0, import_remix_domains.makeDomainFunction)(schema)(async (values) => await saveMyValues(values)), action = async ({ request }) => (0, import_remix_forms.formAction)({
+  request,
+  schema,
+  mutation,
+  successPath: "/"
+});
+function contact_form_default() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("main", {
+    className: "grid sm:grid-cols-1 md:grid-cols-3 p-7 gap-4",
+    children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
+        className: "md:col-span-2",
+        children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h2", {
+          className: "text-4xl",
+          children: "Let's work together! I'd love to hear about your project and see how I can help."
+        }, void 0, !1, {
+          fileName: "app/routes/contact-form.tsx",
+          lineNumber: 28,
+          columnNumber: 9
+        }, this)
+      }, void 0, !1, {
+        fileName: "app/routes/contact-form.tsx",
+        lineNumber: 27,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
+        children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_remix_forms.Form, {
+          schema
+        }, void 0, !1, {
+          fileName: "app/routes/contact-form.tsx",
+          lineNumber: 33,
+          columnNumber: 9
+        }, this)
+      }, void 0, !1, {
+        fileName: "app/routes/contact-form.tsx",
+        lineNumber: 32,
+        columnNumber: 7
+      }, this)
+    ]
+  }, void 0, !0, {
+    fileName: "app/routes/contact-form.tsx",
+    lineNumber: 26,
+    columnNumber: 5
+  }, this);
+}
+
 // app/routes/contact.tsx
 var contact_exports = {};
 __export(contact_exports, {
@@ -382,11 +439,30 @@ __export(contact_exports, {
 var import_jsx_dev_runtime = require("react/jsx-dev-runtime");
 function contact_default() {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("main", {
-    className: "min-h-screen"
+    className: "min-h-screen p-7",
+    children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h2", {
+      className: "mt-7 text-4xl",
+      children: [
+        "Let's work together! I'd love to hear about your project and see how I can help. Reach out at ",
+        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
+          href: "mailto:wrightmight@gmail.com",
+          children: "wrightmight@gmail.com"
+        }, void 0, !1, {
+          fileName: "app/routes/contact.tsx",
+          lineNumber: 5,
+          columnNumber: 105
+        }, this),
+        "."
+      ]
+    }, void 0, !0, {
+      fileName: "app/routes/contact.tsx",
+      lineNumber: 4,
+      columnNumber: 10
+    }, this)
   }, void 0, !1, {
     fileName: "app/routes/contact.tsx",
-    lineNumber: 2,
-    columnNumber: 10
+    lineNumber: 3,
+    columnNumber: 5
   }, this);
 }
 
@@ -398,37 +474,61 @@ __export(about_exports, {
 var import_jsx_dev_runtime = require("react/jsx-dev-runtime");
 function about_default() {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("main", {
-    className: "min-h-screen",
-    children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h2", {
-      className: "my-7 p-7 text-4xl",
-      children: [
-        "Hey there \u{1F44B}",
-        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, !1, {
-          fileName: "app/routes/about.tsx",
-          lineNumber: 6,
-          columnNumber: 9
-        }, this),
-        "I\u2019m currently enrolled in a Full Stack Coding Bootcamp through University of Washington and operate a photo booth company called",
-        " ",
-        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
-          href: "http://hellothereyou.com",
-          children: "Hello There You"
+    className: "min-h-screen grid sm:grid-cols-1 md:grid-cols-3 p-7 gap-4 mt-7",
+    children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
+        children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", {
+          src: "https://fvhsvmaekuyarkujwasn.supabase.co/storage/v1/object/public/portfolio/selfies/about-profile-1.jpg",
+          alt: "prw profile pic",
+          className: "rounded-lg"
         }, void 0, !1, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 9,
+          lineNumber: 5,
           columnNumber: 9
-        }, this),
-        " in Seattle, WA. My past lives include video production, front-end development, UX design, and interning at an ad agency."
-      ]
-    }, void 0, !0, {
-      fileName: "app/routes/about.tsx",
-      lineNumber: 4,
-      columnNumber: 7
-    }, this)
-  }, void 0, !1, {
+        }, this)
+      }, void 0, !1, {
+        fileName: "app/routes/about.tsx",
+        lineNumber: 4,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
+        className: "md:col-span-2",
+        children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h2", {
+          className: "text-4xl",
+          children: [
+            "Hey there \u{1F44B}",
+            /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, !1, {
+              fileName: "app/routes/about.tsx",
+              lineNumber: 10,
+              columnNumber: 11
+            }, this),
+            "I'm currently finishing up a Full Stack Coding Bootcamp through University of Washington and operate a photo booth company called",
+            " ",
+            /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
+              href: "http://hellothereyou.com",
+              children: "Hello There You"
+            }, void 0, !1, {
+              fileName: "app/routes/about.tsx",
+              lineNumber: 13,
+              columnNumber: 11
+            }, this),
+            " in Seattle, WA. My past lives include video production, front-end development, UX design, and interning at an ad agency."
+          ]
+        }, void 0, !0, {
+          fileName: "app/routes/about.tsx",
+          lineNumber: 8,
+          columnNumber: 9
+        }, this)
+      }, void 0, !1, {
+        fileName: "app/routes/about.tsx",
+        lineNumber: 7,
+        columnNumber: 7
+      }, this)
+    ]
+  }, void 0, !0, {
     fileName: "app/routes/about.tsx",
     lineNumber: 3,
-    columnNumber: 5
+    columnNumber: 6
   }, this);
 }
 
@@ -565,7 +665,7 @@ function Index() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "b0e5c2d6", entry: { module: "/build/entry.client-6URL4G7T.js", imports: ["/build/_shared/chunk-5XRGLJCI.js", "/build/_shared/chunk-MLBUYSNZ.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-XFC4Z7MP.js", imports: ["/build/_shared/chunk-L76YKPZB.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-ZR3WQ7ZN.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-WBVOVFTT.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-2KGNP6C4.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-B0E5C2D6.js" };
+var assets_manifest_default = { version: "55ef6bd5", entry: { module: "/build/entry.client-J7LPRJGO.js", imports: ["/build/_shared/chunk-IU6B272M.js", "/build/_shared/chunk-MLBUYSNZ.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-UD7MNSHO.js", imports: ["/build/_shared/chunk-3UKKZGLQ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-UHJUFA6F.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-PW5CQGBC.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/contact-form": { id: "routes/contact-form", parentId: "root", path: "contact-form", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-form-HLGBEFYE.js", imports: void 0, hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-PUKJ5UKM.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-55EF6BD5.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
@@ -576,6 +676,14 @@ var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { mod
     index: void 0,
     caseSensitive: void 0,
     module: root_exports
+  },
+  "routes/contact-form": {
+    id: "routes/contact-form",
+    parentId: "root",
+    path: "contact-form",
+    index: void 0,
+    caseSensitive: void 0,
+    module: contact_form_exports
   },
   "routes/contact": {
     id: "routes/contact",

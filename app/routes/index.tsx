@@ -24,12 +24,15 @@ export default function Index() {
         <div className="grid grid-cols-3">
           {projects.map((project) => (
             <div className="card flex-wrap" key={project.slug}>
-              <figure></figure>
+              <figure><img src={project.cover} alt={project.title} /></figure>
               <div className="card-body p-7">
                 <h2 className="card-title">
-                  <Link to={project.slug} prefetch="intent">
+                  <a href={project.url}>
                     {project.title} &#8594;
-                  </Link>
+                  </a>
+                  {/* <Link to={project.slug} prefetch="intent">
+                    {project.title} &#8594;
+                  </Link> */}
                 </h2>
                 <div className="card-actions justify-end">
                   <div className="badge badge-outline">{project.category}</div>

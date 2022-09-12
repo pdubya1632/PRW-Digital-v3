@@ -24,7 +24,7 @@ export default function Index() {
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-7">
           {projects.map((project) => (
             <div className="card card-compact card-bordered flex-wrap" key={project.slug}>
-              <figure><img src={project.cover} alt={project.title} /></figure>
+              <figure><a href={project.url}><img src={project.cover} alt={project.title} /></a></figure>
               <div className="card-body p-7">
                 <h2 className="card-title">
                   <a href={project.url}>

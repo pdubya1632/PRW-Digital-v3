@@ -1,8 +1,10 @@
+import { SITE_EMAIL_ADDRESS } from "../config/constants";
+
 export default function () {
   return (
     <main className="min-h-screen p-7">
          <h2 className="mt-7 text-4xl">
-          Let's work together! I'd love to hear about your project and see how I can help. Reach out at <a href="mailto:wrightmight@gmail.com">wrightmight@gmail.com</a>.
+          Let's work together! I'd love to hear about your project and see how I can help. Reach out at <a href={SITE_EMAIL_ADDRESS}>wrightmight@gmail.com</a>.
         </h2>
       {/* <div>
         <form method="post" action="#">

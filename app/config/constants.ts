@@ -1,6 +1,6 @@
 export const SITE_AUTHOR = `Patrick Richardson Wright`;
 export const SITE_DESCRIPTION = `The online portfolio of ${SITE_AUTHOR}, a Creative Developer`;
-export const SITE_EMAIL_ADDRESS = `hello@prw.digital`;
+export const SITE_EMAIL_ADDRESS = `wrightmight@gmail.com`;
 export const SITE_EMAIL_LINK = `mailto:${SITE_EMAIL_ADDRESS}`;
 export const SITE_TITLE = `${SITE_AUTHOR} - A Creative Developer`;
 export const SITE_UPDATED = new Date("2022-07-20");

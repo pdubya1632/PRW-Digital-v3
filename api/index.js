@@ -375,62 +375,6 @@ function App() {
   }, this);
 }
 
-// app/routes/contact-form.tsx
-var contact_form_exports = {};
-__export(contact_form_exports, {
-  action: () => action,
-  default: () => contact_form_default
-});
-var import_remix_domains = require("remix-domains"), import_remix_forms = require("remix-forms"), import_zod = require("zod"), import_jsx_dev_runtime = require("react/jsx-dev-runtime"), schema = import_zod.z.object({
-  name: import_zod.z.string().min(1),
-  email: import_zod.z.string().min(1).email(),
-  message: import_zod.z.string().min(1)
-}), mutation = (0, import_remix_domains.makeDomainFunction)(schema)(async (values) => await saveMyValues(values)), action = async ({ request }) => (0, import_remix_forms.formAction)({
-  request,
-  schema,
-  mutation,
-  successPath: "/"
-});
-function contact_form_default() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("main", {
-    className: "grid sm:grid-cols-1 md:grid-cols-3 p-7 gap-4",
-    children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-        className: "md:col-span-2",
-        children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h2", {
-          className: "text-4xl",
-          children: "Let's work together! I'd love to hear about your project and see how I can help."
-        }, void 0, !1, {
-          fileName: "app/routes/contact-form.tsx",
-          lineNumber: 28,
-          columnNumber: 9
-        }, this)
-      }, void 0, !1, {
-        fileName: "app/routes/contact-form.tsx",
-        lineNumber: 27,
-        columnNumber: 7
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-        children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_remix_forms.Form, {
-          schema
-        }, void 0, !1, {
-          fileName: "app/routes/contact-form.tsx",
-          lineNumber: 33,
-          columnNumber: 9
-        }, this)
-      }, void 0, !1, {
-        fileName: "app/routes/contact-form.tsx",
-        lineNumber: 32,
-        columnNumber: 7
-      }, this)
-    ]
-  }, void 0, !0, {
-    fileName: "app/routes/contact-form.tsx",
-    lineNumber: 26,
-    columnNumber: 5
-  }, this);
-}
-
 // app/routes/contact.tsx
 var contact_exports = {};
 __export(contact_exports, {
@@ -665,7 +609,7 @@ function Index() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "55ef6bd5", entry: { module: "/build/entry.client-J7LPRJGO.js", imports: ["/build/_shared/chunk-IU6B272M.js", "/build/_shared/chunk-MLBUYSNZ.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-UD7MNSHO.js", imports: ["/build/_shared/chunk-3UKKZGLQ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-UHJUFA6F.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-PW5CQGBC.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/contact-form": { id: "routes/contact-form", parentId: "root", path: "contact-form", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-form-HLGBEFYE.js", imports: void 0, hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-PUKJ5UKM.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-55EF6BD5.js" };
+var assets_manifest_default = { version: "cfff3f56", entry: { module: "/build/entry.client-6URL4G7T.js", imports: ["/build/_shared/chunk-5XRGLJCI.js", "/build/_shared/chunk-MLBUYSNZ.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-T2HQPV5N.js", imports: ["/build/_shared/chunk-3UKKZGLQ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-UHJUFA6F.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-PW5CQGBC.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-JZG4PFTZ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-CFFF3F56.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
@@ -676,14 +620,6 @@ var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { mod
     index: void 0,
     caseSensitive: void 0,
     module: root_exports
-  },
-  "routes/contact-form": {
-    id: "routes/contact-form",
-    parentId: "root",
-    path: "contact-form",
-    index: void 0,
-    caseSensitive: void 0,
-    module: contact_form_exports
   },
   "routes/contact": {
     id: "routes/contact",

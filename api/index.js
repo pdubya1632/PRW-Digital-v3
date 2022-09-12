@@ -57,113 +57,119 @@ __export(root_exports, {
 var import_react3 = require("@remix-run/react");
 
 // app/styles/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-FWVNDYC3.css";
+var tailwind_default = "/build/_assets/tailwind-2WALTNE6.css";
 
 // app/components/AppHeader.tsx
-var import_react2 = require("@remix-run/react"), import_jsx_dev_runtime = require("react/jsx-dev-runtime"), AppHeader = () => /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-  className: "navbar bg-base-100 mt-6",
-  children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-      className: "flex-1",
-      children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react2.Link, {
-        to: "/",
-        className: "pl-5 text-2xl normal-case leading-6",
-        children: [
-          "Patrick",
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, !1, {
-            fileName: "app/components/AppHeader.tsx",
-            lineNumber: 9,
-            columnNumber: 11
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", {
-            className: "pl-2",
-            children: "Richardson"
-          }, void 0, !1, {
-            fileName: "app/components/AppHeader.tsx",
-            lineNumber: 10,
-            columnNumber: 11
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, !1, {
-            fileName: "app/components/AppHeader.tsx",
-            lineNumber: 11,
-            columnNumber: 11
-          }, this),
-          "Wright"
-        ]
-      }, void 0, !0, {
+var import_react2 = require("@remix-run/react"), import_jsx_dev_runtime = require("react/jsx-dev-runtime"), AppHeader = () => {
+  let activeClassName = "underline";
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
+    className: "navbar bg-base-100 mt-6",
+    children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
+        className: "flex-1",
+        children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react2.NavLink, {
+          to: "/",
+          className: "pl-5 text-2xl normal-case leading-6",
+          children: [
+            "Patrick",
+            /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, !1, {
+              fileName: "app/components/AppHeader.tsx",
+              lineNumber: 14,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", {
+              className: "pl-2",
+              children: "Richardson"
+            }, void 0, !1, {
+              fileName: "app/components/AppHeader.tsx",
+              lineNumber: 15,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, !1, {
+              fileName: "app/components/AppHeader.tsx",
+              lineNumber: 16,
+              columnNumber: 11
+            }, this),
+            "Wright"
+          ]
+        }, void 0, !0, {
+          fileName: "app/components/AppHeader.tsx",
+          lineNumber: 9,
+          columnNumber: 9
+        }, this)
+      }, void 0, !1, {
         fileName: "app/components/AppHeader.tsx",
-        lineNumber: 7,
-        columnNumber: 9
-      }, this)
-    }, void 0, !1, {
-      fileName: "app/components/AppHeader.tsx",
-      lineNumber: 6,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-      className: "flex-none",
-      children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("ul", {
-        className: "menu menu-horizontal p-0 md:text-xl sm:text-l",
-        children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", {
-            children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react2.Link, {
-              to: "/",
-              children: "Work"
+        lineNumber: 8,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
+        className: "flex-none",
+        children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("ul", {
+          className: "menu menu-horizontal p-0 md:text-xl sm:text-l",
+          children: [
+            /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", {
+              children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react2.NavLink, {
+                to: "/",
+                className: ({ isActive }) => isActive ? activeClassName : void 0,
+                children: "Work"
+              }, void 0, !1, {
+                fileName: "app/components/AppHeader.tsx",
+                lineNumber: 23,
+                columnNumber: 13
+              }, this)
             }, void 0, !1, {
               fileName: "app/components/AppHeader.tsx",
-              lineNumber: 18,
-              columnNumber: 13
-            }, this)
-          }, void 0, !1, {
-            fileName: "app/components/AppHeader.tsx",
-            lineNumber: 17,
-            columnNumber: 11
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", {
-            children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react2.Link, {
-              to: "/about",
-              children: "About"
+              lineNumber: 22,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", {
+              children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react2.NavLink, {
+                to: "/about",
+                className: ({ isActive }) => isActive ? activeClassName : void 0,
+                children: "About"
+              }, void 0, !1, {
+                fileName: "app/components/AppHeader.tsx",
+                lineNumber: 33,
+                columnNumber: 13
+              }, this)
             }, void 0, !1, {
               fileName: "app/components/AppHeader.tsx",
-              lineNumber: 21,
-              columnNumber: 13
-            }, this)
-          }, void 0, !1, {
-            fileName: "app/components/AppHeader.tsx",
-            lineNumber: 20,
-            columnNumber: 11
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", {
-            children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react2.Link, {
-              to: "/contact",
-              children: "Contact"
+              lineNumber: 32,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", {
+              children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react2.NavLink, {
+                to: "/contact",
+                className: ({ isActive }) => isActive ? activeClassName : void 0,
+                children: "Contact"
+              }, void 0, !1, {
+                fileName: "app/components/AppHeader.tsx",
+                lineNumber: 43,
+                columnNumber: 13
+              }, this)
             }, void 0, !1, {
               fileName: "app/components/AppHeader.tsx",
-              lineNumber: 24,
-              columnNumber: 13
+              lineNumber: 42,
+              columnNumber: 11
             }, this)
-          }, void 0, !1, {
-            fileName: "app/components/AppHeader.tsx",
-            lineNumber: 23,
-            columnNumber: 11
-          }, this)
-        ]
-      }, void 0, !0, {
+          ]
+        }, void 0, !0, {
+          fileName: "app/components/AppHeader.tsx",
+          lineNumber: 21,
+          columnNumber: 9
+        }, this)
+      }, void 0, !1, {
         fileName: "app/components/AppHeader.tsx",
-        lineNumber: 16,
-        columnNumber: 9
+        lineNumber: 20,
+        columnNumber: 7
       }, this)
-    }, void 0, !1, {
-      fileName: "app/components/AppHeader.tsx",
-      lineNumber: 15,
-      columnNumber: 7
-    }, this)
-  ]
-}, void 0, !0, {
-  fileName: "app/components/AppHeader.tsx",
-  lineNumber: 5,
-  columnNumber: 5
-}, this);
+    ]
+  }, void 0, !0, {
+    fileName: "app/components/AppHeader.tsx",
+    lineNumber: 7,
+    columnNumber: 5
+  }, this);
+};
 
 // app/components/icons.tsx
 var import_jsx_dev_runtime = require("react/jsx-dev-runtime");
@@ -616,7 +622,7 @@ function Index() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "18cf28cc", entry: { module: "/build/entry.client-6URL4G7T.js", imports: ["/build/_shared/chunk-5XRGLJCI.js", "/build/_shared/chunk-MLBUYSNZ.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-FEIH6VLT.js", imports: ["/build/_shared/chunk-ZWVC3LXC.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-UHJUFA6F.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-3GDQQ2H4.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-LWTV4YCW.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-18CF28CC.js" };
+var assets_manifest_default = { version: "204e3271", entry: { module: "/build/entry.client-SWYCROKH.js", imports: ["/build/_shared/chunk-KY2RGPHY.js", "/build/_shared/chunk-MLBUYSNZ.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-U6HYMY4L.js", imports: ["/build/_shared/chunk-ZWVC3LXC.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-UHJUFA6F.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-3GDQQ2H4.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-DMDIHZIX.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-204E3271.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

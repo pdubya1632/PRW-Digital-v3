@@ -57,7 +57,7 @@ __export(root_exports, {
 var import_react3 = require("@remix-run/react");
 
 // app/styles/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-3FO2M3ZX.css";
+var tailwind_default = "/build/_assets/tailwind-FWVNDYC3.css";
 
 // app/components/AppHeader.tsx
 var import_react2 = require("@remix-run/react"), import_jsx_dev_runtime = require("react/jsx-dev-runtime"), AppHeader = () => /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -103,7 +103,7 @@ var import_react2 = require("@remix-run/react"), import_jsx_dev_runtime = requir
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
       className: "flex-none",
       children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("ul", {
-        className: "menu menu-horizontal p-0 text-xl",
+        className: "menu menu-horizontal p-0 md:text-xl sm:text-l",
         children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", {
             children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react2.Link, {
@@ -227,7 +227,7 @@ function TwitterIcon() {
 }
 
 // app/config/constants.ts
-var SITE_AUTHOR = "Patrick Richardson Wright", SITE_DESCRIPTION = `The online portfolio of ${SITE_AUTHOR}, a Creative Developer`, SITE_EMAIL_ADDRESS = "hello@prw.digital", SITE_EMAIL_LINK = `mailto:${SITE_EMAIL_ADDRESS}`, SITE_TITLE = `${SITE_AUTHOR} - A Creative Developer`, SITE_UPDATED = new Date("2022-07-20");
+var SITE_AUTHOR = "Patrick Richardson Wright", SITE_DESCRIPTION = `The online portfolio of ${SITE_AUTHOR}, a Creative Developer`, SITE_EMAIL_ADDRESS = "wrightmight@gmail.com", SITE_EMAIL_LINK = `mailto:${SITE_EMAIL_ADDRESS}`, SITE_TITLE = `${SITE_AUTHOR} - A Creative Developer`, SITE_UPDATED = new Date("2022-07-20");
 var SITE_YEAR = new Date().getFullYear(), INTRO_BLURB = `I'm a Creative Developer with a love for great design, quality code,
           and intuitive user experiences.`;
 var SOCIAL_GITHUB = "https://github.com/pdubya1632/", SOCIAL_LINKEDIN = "https://www.linkedin.com/in/patrick-wright-451535166/", SOCIAL_TWITTER = "https://twitter.com/wrightmight";
@@ -389,23 +389,23 @@ function contact_default() {
       children: [
         "Let's work together! I'd love to hear about your project and see how I can help. Reach out at ",
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
-          href: "mailto:wrightmight@gmail.com",
+          href: SITE_EMAIL_ADDRESS,
           children: "wrightmight@gmail.com"
         }, void 0, !1, {
           fileName: "app/routes/contact.tsx",
-          lineNumber: 5,
+          lineNumber: 7,
           columnNumber: 105
         }, this),
         "."
       ]
     }, void 0, !0, {
       fileName: "app/routes/contact.tsx",
-      lineNumber: 4,
+      lineNumber: 6,
       columnNumber: 10
     }, this)
   }, void 0, !1, {
     fileName: "app/routes/contact.tsx",
-    lineNumber: 3,
+    lineNumber: 5,
     columnNumber: 5
   }, this);
 }
@@ -529,9 +529,16 @@ function Index() {
             className: "card card-compact card-bordered flex-wrap",
             children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("figure", {
-                children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", {
-                  src: project.cover,
-                  alt: project.title
+                children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
+                  href: project.url,
+                  children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", {
+                    src: project.cover,
+                    alt: project.title
+                  }, void 0, !1, {
+                    fileName: "app/routes/index.tsx",
+                    lineNumber: 27,
+                    columnNumber: 45
+                  }, this)
                 }, void 0, !1, {
                   fileName: "app/routes/index.tsx",
                   lineNumber: 27,
@@ -609,7 +616,7 @@ function Index() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "cfff3f56", entry: { module: "/build/entry.client-6URL4G7T.js", imports: ["/build/_shared/chunk-5XRGLJCI.js", "/build/_shared/chunk-MLBUYSNZ.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-T2HQPV5N.js", imports: ["/build/_shared/chunk-3UKKZGLQ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-UHJUFA6F.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-PW5CQGBC.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-JZG4PFTZ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-CFFF3F56.js" };
+var assets_manifest_default = { version: "18cf28cc", entry: { module: "/build/entry.client-6URL4G7T.js", imports: ["/build/_shared/chunk-5XRGLJCI.js", "/build/_shared/chunk-MLBUYSNZ.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-FEIH6VLT.js", imports: ["/build/_shared/chunk-ZWVC3LXC.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-UHJUFA6F.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-3GDQQ2H4.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-LWTV4YCW.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-18CF28CC.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

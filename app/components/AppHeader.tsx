@@ -13,7 +13,7 @@ export const AppHeader = () => {
         </Link>
       </div>
       <div className="flex-none">
-        <ul className="menu menu-horizontal p-0 text-xl">
+        <ul className="menu menu-horizontal p-0 md:text-xl sm:text-l">
           <li>
             <Link to="/">Work</Link>
           </li>

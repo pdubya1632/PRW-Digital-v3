@@ -1,3 +1,3 @@
 # PRW Portfolio Site v3
 
-In progress...
+Exploring and learning [https://remix.run/](Remix) - a React framework used for server-side rendering - by building a new version of my online portfolio.

@@ -57,7 +57,7 @@ __export(root_exports, {
 var import_react3 = require("@remix-run/react");
 
 // app/styles/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-2WALTNE6.css";
+var tailwind_default = "/build/_assets/tailwind-R4P2UYFL.css";
 
 // app/components/AppHeader.tsx
 var import_react2 = require("@remix-run/react"), import_jsx_dev_runtime = require("react/jsx-dev-runtime"), AppHeader = () => {
@@ -390,26 +390,36 @@ var import_jsx_dev_runtime = require("react/jsx-dev-runtime");
 function contact_default() {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("main", {
     className: "min-h-screen p-7",
-    children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h2", {
-      className: "mt-7 text-4xl",
-      children: [
-        "Let's work together! I'd love to hear about your project and see how I can help. Reach out at ",
-        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
-          href: SITE_EMAIL_ADDRESS,
-          children: "wrightmight@gmail.com"
-        }, void 0, !1, {
-          fileName: "app/routes/contact.tsx",
-          lineNumber: 7,
-          columnNumber: 105
-        }, this),
-        "."
-      ]
-    }, void 0, !0, {
-      fileName: "app/routes/contact.tsx",
-      lineNumber: 6,
-      columnNumber: 10
-    }, this)
-  }, void 0, !1, {
+    children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h2", {
+        className: "text-4xl my-7",
+        children: "Let's work together! I'd love to hear about your project and see how I can help."
+      }, void 0, !1, {
+        fileName: "app/routes/contact.tsx",
+        lineNumber: 6,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h3", {
+        className: "text-2xl",
+        children: [
+          "You can reach me at:",
+          " ",
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
+            href: `mailto:${SITE_EMAIL_ADDRESS}`,
+            children: SITE_EMAIL_ADDRESS
+          }, void 0, !1, {
+            fileName: "app/routes/contact.tsx",
+            lineNumber: 12,
+            columnNumber: 9
+          }, this)
+        ]
+      }, void 0, !0, {
+        fileName: "app/routes/contact.tsx",
+        lineNumber: 10,
+        columnNumber: 7
+      }, this)
+    ]
+  }, void 0, !0, {
     fileName: "app/routes/contact.tsx",
     lineNumber: 5,
     columnNumber: 5
@@ -449,36 +459,38 @@ function about_default() {
             "Hey there \u{1F44B}",
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("br", {}, void 0, !1, {
               fileName: "app/routes/about.tsx",
-              lineNumber: 10,
+              lineNumber: 14,
               columnNumber: 11
             }, this),
             "I'm currently finishing up a Full Stack Coding Bootcamp through University of Washington and operate a photo booth company called",
             " ",
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
               href: "http://hellothereyou.com",
+              className: "underline",
               children: "Hello There You"
             }, void 0, !1, {
               fileName: "app/routes/about.tsx",
-              lineNumber: 13,
+              lineNumber: 18,
               columnNumber: 11
             }, this),
-            " in Seattle, WA. My past lives include video production, front-end development, UX design, and interning at an ad agency."
+            " ",
+            "in Seattle, WA. My past lives include video production, front-end development, UX design, and interning at an ad agency."
           ]
         }, void 0, !0, {
           fileName: "app/routes/about.tsx",
-          lineNumber: 8,
+          lineNumber: 12,
           columnNumber: 9
         }, this)
       }, void 0, !1, {
         fileName: "app/routes/about.tsx",
-        lineNumber: 7,
+        lineNumber: 11,
         columnNumber: 7
       }, this)
     ]
   }, void 0, !0, {
     fileName: "app/routes/about.tsx",
     lineNumber: 3,
-    columnNumber: 6
+    columnNumber: 5
   }, this);
 }
 
@@ -622,7 +634,7 @@ function Index() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "204e3271", entry: { module: "/build/entry.client-SWYCROKH.js", imports: ["/build/_shared/chunk-KY2RGPHY.js", "/build/_shared/chunk-MLBUYSNZ.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-U6HYMY4L.js", imports: ["/build/_shared/chunk-ZWVC3LXC.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-UHJUFA6F.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-3GDQQ2H4.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-DMDIHZIX.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-204E3271.js" };
+var assets_manifest_default = { version: "af8aba9a", entry: { module: "/build/entry.client-SWYCROKH.js", imports: ["/build/_shared/chunk-KY2RGPHY.js", "/build/_shared/chunk-MLBUYSNZ.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-NPEWBK7X.js", imports: ["/build/_shared/chunk-ZWVC3LXC.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-F4P6KAQN.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-FPMB7EEB.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-DMDIHZIX.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-AF8ABA9A.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

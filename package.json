@@ -17,6 +17,7 @@
     "/public/build"
   ],
   "dependencies": {
+    "@formspark/use-formspark": "^0.1.39",
     "@prisma/client": "^4.3.0",
     "@remix-run/node": "^1.7.0",
     "@remix-run/react": "^1.7.0",

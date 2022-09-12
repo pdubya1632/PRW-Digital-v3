@@ -4,13 +4,14 @@ import {
   SOCIAL_LINKEDIN,
   SOCIAL_TWITTER,
   SITE_YEAR,
+  SITE_AUTHOR,
 } from "../config/constants";
 
 export const AppFooter = () => {
   return (
     <footer className="footer items-center border-t-4 p-7">
       <div className="grid-flow-col items-center">
-        <p>Copyright &copy; {SITE_YEAR} - hello@prw.digital</p>
+        <p>Copyright &copy; {SITE_YEAR} - {SITE_AUTHOR}</p>
       </div>
       <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
         <a href={SOCIAL_GITHUB} target="_blank" rel="noreferrer">

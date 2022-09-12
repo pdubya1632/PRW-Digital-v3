@@ -57,7 +57,7 @@ __export(root_exports, {
 var import_react3 = require("@remix-run/react");
 
 // app/styles/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-5APQZDP4.css";
+var tailwind_default = "/build/_assets/tailwind-NUDP26HZ.css";
 
 // app/components/AppHeader.tsx
 var import_react2 = require("@remix-run/react"), import_jsx_dev_runtime = require("react/jsx-dev-runtime"), AppHeader = () => /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -241,16 +241,17 @@ var import_jsx_dev_runtime = require("react/jsx-dev-runtime"), AppFooter = () =>
         children: [
           "Copyright \xA9 ",
           SITE_YEAR,
-          " - hello@prw.digital"
+          " - ",
+          SITE_AUTHOR
         ]
       }, void 0, !0, {
         fileName: "app/components/AppFooter.tsx",
-        lineNumber: 13,
+        lineNumber: 14,
         columnNumber: 9
       }, this)
     }, void 0, !1, {
       fileName: "app/components/AppFooter.tsx",
-      lineNumber: 12,
+      lineNumber: 13,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
@@ -263,7 +264,7 @@ var import_jsx_dev_runtime = require("react/jsx-dev-runtime"), AppFooter = () =>
           children: GithubIcon()
         }, void 0, !1, {
           fileName: "app/components/AppFooter.tsx",
-          lineNumber: 16,
+          lineNumber: 17,
           columnNumber: 9
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
@@ -273,7 +274,7 @@ var import_jsx_dev_runtime = require("react/jsx-dev-runtime"), AppFooter = () =>
           children: LinkedInIcon()
         }, void 0, !1, {
           fileName: "app/components/AppFooter.tsx",
-          lineNumber: 19,
+          lineNumber: 20,
           columnNumber: 9
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
@@ -283,19 +284,19 @@ var import_jsx_dev_runtime = require("react/jsx-dev-runtime"), AppFooter = () =>
           children: TwitterIcon()
         }, void 0, !1, {
           fileName: "app/components/AppFooter.tsx",
-          lineNumber: 22,
+          lineNumber: 23,
           columnNumber: 9
         }, this)
       ]
     }, void 0, !0, {
       fileName: "app/components/AppFooter.tsx",
-      lineNumber: 15,
+      lineNumber: 16,
       columnNumber: 7
     }, this)
   ]
 }, void 0, !0, {
   fileName: "app/components/AppFooter.tsx",
-  lineNumber: 11,
+  lineNumber: 12,
   columnNumber: 5
 }, this);
 
@@ -479,9 +480,9 @@ function Index() {
           columnNumber: 9
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-          className: "grid grid-cols-3",
+          className: "grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-7",
           children: projects.map((project) => /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-            className: "card flex-wrap",
+            className: "card card-compact card-bordered flex-wrap",
             children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("figure", {
                 children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", {
@@ -519,7 +520,7 @@ function Index() {
                     columnNumber: 17
                   }, this),
                   /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-                    className: "card-actions justify-end",
+                    className: "card-actions justify-start",
                     children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
                       className: "badge badge-outline",
                       children: project.category
@@ -564,7 +565,7 @@ function Index() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "78754fc8", entry: { module: "/build/entry.client-6URL4G7T.js", imports: ["/build/_shared/chunk-5XRGLJCI.js", "/build/_shared/chunk-MLBUYSNZ.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-DQIJJV46.js", imports: ["/build/_shared/chunk-WRD4C6IX.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-ZR3WQ7ZN.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-WBVOVFTT.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-6TQUB3TE.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-78754FC8.js" };
+var assets_manifest_default = { version: "b0e5c2d6", entry: { module: "/build/entry.client-6URL4G7T.js", imports: ["/build/_shared/chunk-5XRGLJCI.js", "/build/_shared/chunk-MLBUYSNZ.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-XFC4Z7MP.js", imports: ["/build/_shared/chunk-L76YKPZB.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-ZR3WQ7ZN.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-WBVOVFTT.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-2KGNP6C4.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-B0E5C2D6.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

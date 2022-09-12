@@ -1,4 +1,4 @@
-import { Link, useLoaderData } from "@remix-run/react";
+import { useLoaderData } from "@remix-run/react";
 import type { LoaderFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 
@@ -21,9 +21,9 @@ export default function Index() {
     <main className="min-h-screen">
       <div>
         <h2 className="my-7 p-7 text-4xl">{INTRO_BLURB}</h2>
-        <div className="grid grid-cols-3">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-7">
           {projects.map((project) => (
-            <div className="card flex-wrap" key={project.slug}>
+            <div className="card card-compact card-bordered flex-wrap" key={project.slug}>
               <figure><img src={project.cover} alt={project.title} /></figure>
               <div className="card-body p-7">
                 <h2 className="card-title">
@@ -34,7 +34,7 @@ export default function Index() {
                     {project.title} &#8594;
                   </Link> */}
                 </h2>
-                <div className="card-actions justify-end">
+                <div className="card-actions justify-start">
                   <div className="badge badge-outline">{project.category}</div>
                 </div>
               </div>
